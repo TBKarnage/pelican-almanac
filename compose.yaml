@@ -1,0 +1,9 @@
+services:
+  pelican-almanac:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pelican-almanac
+    ports:
+      - "${PORT:-4173}:80"
+    restart: unless-stopped

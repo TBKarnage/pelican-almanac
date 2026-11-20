@@ -1,0 +1,26 @@
+name: Feature Request
+description: Suggest a new feature, Stardew Valley tracker addition, or UI enhancement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: Describe the feature or enhancement you'd like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Motivation / Use Case
+      description: What gameplay workflow or problem would this improve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Proposed Solution or Mockup
+      description: Optional details on how it should work or look (desktop & iPad).

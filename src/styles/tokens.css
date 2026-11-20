@@ -1,0 +1,122 @@
+:root {
+  --font-serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  /* Daylight: Pelican Parchment Almanac */
+  --bg-canvas: #efe5ce;
+  --bg-surface: #faf4e6;
+  --bg-elevated: #fffdf7;
+  --bg-muted: #e6d7ba;
+  --bg-hover: #efe3ca;
+
+  --ink: #2b1e13;
+  --ink-muted: #5f4b39;
+  --ink-soft: #856f59;
+
+  --wood: #5c3a21;
+  --wood-dark: #422714;
+  --wood-border: #cbb48f;
+  --wood-border-strong: #a78b62;
+
+  --sage: #386a35;
+  --sage-soft: rgba(56, 106, 53, 0.13);
+  --gold: #ad6610;
+  --gold-soft: rgba(173, 102, 16, 0.14);
+  --crimson: #a8382f;
+  --crimson-soft: rgba(168, 56, 47, 0.13);
+  --river: #2c6482;
+  --river-soft: rgba(44, 100, 130, 0.13);
+  --plum: #6d4780;
+  --plum-soft: rgba(109, 71, 128, 0.13);
+
+  --shadow-card: 0 2px 8px rgba(43, 30, 19, 0.07), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  --shadow-drawer: -6px 0 28px rgba(32, 20, 10, 0.18);
+  --shadow-modal: 0 14px 44px rgba(32, 20, 10, 0.25);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+[data-theme='moonlight'] {
+  /* Moonlight Cabin: Candlelit Warm Dark Wood */
+  --bg-canvas: #17120e;
+  --bg-surface: #221b15;
+  --bg-elevated: #2c231c;
+  --bg-muted: #352a21;
+  --bg-hover: #3d3126;
+
+  --ink: #f3e8d2;
+  --ink-muted: #c8b396;
+  --ink-soft: #968169;
+
+  --wood: #d69848;
+  --wood-dark: #f0bc74;
+  --wood-border: #483829;
+  --wood-border-strong: #67503a;
+
+  --sage: #73b562;
+  --sage-soft: rgba(115, 181, 98, 0.16);
+  --gold: #e6a340;
+  --gold-soft: rgba(230, 163, 64, 0.16);
+  --crimson: #e0675d;
+  --crimson-soft: rgba(224, 103, 93, 0.16);
+  --river: #64a7ca;
+  --river-soft: rgba(100, 167, 202, 0.16);
+  --plum: #ad84c9;
+  --plum-soft: rgba(173, 132, 201, 0.16);
+
+  --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 232, 195, 0.04);
+  --shadow-drawer: -8px 0 34px rgba(0, 0, 0, 0.52);
+  --shadow-modal: 0 18px 50px rgba(0, 0, 0, 0.65);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-canvas);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.48;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
